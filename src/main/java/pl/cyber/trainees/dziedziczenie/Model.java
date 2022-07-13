@@ -11,6 +11,7 @@ public class Model extends Pojazd {
     private final Kolor kolor;
 
     public Model() {
+        //klasa powyzej powinna pozostac pusta
         // super - slowo kluczowe odnosi sie do konstruktora klasy nadrzednej
         super();
         this.nazwa = "";
