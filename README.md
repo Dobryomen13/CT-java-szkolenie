@@ -1,1 +1,1 @@
-# CT-java-szkolenie
+# szkolenie-java
