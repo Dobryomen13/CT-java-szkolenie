@@ -38,4 +38,15 @@ public class Pojazd {
             return naped;
         }
 
+    public void setMarka(String marka) {
+        this.marka = marka;
+    }
+
+    public void setRocznik(String rocznik) {
+        this.rocznik = rocznik;
+    }
+
+    public void setNaped(String naped) {
+        this.naped = naped;
+    }
 }

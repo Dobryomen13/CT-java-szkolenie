@@ -10,8 +10,18 @@ public class SimpleApp {
         var modelPojazdu2 = new Model("VW", "2020",
         "przod",  "Passat",  1000, 2.0, Kolor.GREEN);
 
-        System.out.println(modelPojazdu2.toString());
-     //       System.out.println(modelPojazdu1);
+        modelPojazdu1.setKolor(Kolor.RED );
+        modelPojazdu1.setMarka(" Mustang ");
+        modelPojazdu1.setNaped(" 4x4 ");
+        modelPojazdu1.setRocznik(" 1967 ");
+        modelPojazdu1.setNazwa(" Mustang Shelby ");
+        modelPojazdu1.setPojemonscSilnika( 2.0 );
+        modelPojazdu1.setPrzebieg( 0 );
+
+
+
+     //   System.out.println(modelPojazdu2.toString());
+            System.out.println(modelPojazdu1);
 
     }
 
