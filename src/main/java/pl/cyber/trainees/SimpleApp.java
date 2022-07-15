@@ -11,7 +11,7 @@ public class SimpleApp {
         "przod",  "Passat",  1000, 2.0, Kolor.GREEN);
 
         modelPojazdu1.setKolor(Kolor.RED );
-        modelPojazdu1.setMarka(" Mustang ");
+        modelPojazdu1.setMarka(" Ford ");
         modelPojazdu1.setNaped(" 4x4 ");
         modelPojazdu1.setRocznik(" 1967 ");
         modelPojazdu1.setNazwa(" Mustang Shelby ");
