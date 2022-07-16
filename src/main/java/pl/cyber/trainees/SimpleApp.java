@@ -3,6 +3,7 @@ package pl.cyber.trainees;
 import pl.cyber.trainees.dziedziczenie.Kolor;
 import pl.cyber.trainees.dziedziczenie.Model;
 import pl.cyber.trainees.dziedziczenie.Pojazd;
+import spotkania.Petle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,6 +58,11 @@ public class SimpleApp {
 
 
        */
+
+        Petle petle = new Petle();
+        petle.wyswielliczby();
     }
 
 }
+
+

@@ -2,7 +2,8 @@ package spotkania;
 
 public class Petle {
 
-    public static void main(String[] args) {
+   // public static void main(String[] args) {
+    public void wyswielliczby() {
         int liczba = 100;
 
         while (liczba > 0) {
