@@ -5,10 +5,10 @@ package pl.cyber.trainees.dziedziczenie;
 
 public class Model extends Pojazd {
 
-    private final String nazwa;
-    private final Integer przebieg;
-    private final Double pojemonscSilnika;
-    private final Kolor kolor;
+    private String nazwa;
+    private Integer przebieg;
+    private Double pojemonscSilnika;
+    private Kolor kolor;
 
     public Model() {
         //klasa powyzej powinna pozostac pusta
@@ -35,13 +35,13 @@ public class Model extends Pojazd {
     //przyslanianie metod - nadawanie nowej funkcjonalnosci do
     @Override //andontacja do wykorzystywania przyslaniania metod
     public String toString() {
-        return "Marka: " + getMarka()
-            + "rocznik: " + getRocznik()
-            + "naped: " + getNaped()
-            + "nazwa modelu: " + this.nazwa
-            + "przebieg: " + this.przebieg
-            + "pojemonscSilnika: " + this.pojemonscSilnika
-            + "kolor: " + this.kolor;
+        return " Marka: " + getMarka()
+            + " rocznik: " + getRocznik()
+            + " naped: " + getNaped()
+            + " nazwa modelu: " + this.nazwa
+            + " przebieg: " + this.przebieg
+            + " pojemonscSilnika: " + this.pojemonscSilnika
+            + " kolor: " + this.kolor;
     }
     public String getNazwa() {
         return nazwa;
@@ -56,4 +56,24 @@ public class Model extends Pojazd {
     public Kolor getKolor() {
         return kolor;
     }
+
+    public void setNazwa(String nazwa) {
+        this.nazwa = nazwa;
+    }
+    public void setPrzebieg(Integer przebieg) {
+        this.przebieg = przebieg;
+    }
+
+    public void setPojemonscSilnika(Double pojemonscSilnika) {
+        this.pojemonscSilnika = pojemonscSilnika;
+    }
+
+    public void setKolor(Kolor kolor) {
+        this.kolor = kolor;
+    }
+
+
+
+    // Ctrl + spacja - skrot do elementw ktore mozna wybrac
+    // np. zadeklarowane zmienne
 }

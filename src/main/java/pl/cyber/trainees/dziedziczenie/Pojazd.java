@@ -21,9 +21,9 @@ public class Pojazd {
     }
 
     public String toString() {
-        return "Marka: " + this.marka
-                + "rocznik: " + this.rocznik
-                + "naped: " + this.naped;
+        return " Marka: " + this.marka
+                + " rocznik: " + this.rocznik
+                + " naped: " + this.naped;
     }
 
     // get - metody, ktorych zadaniem jest pobieranie info z pol klasy
@@ -38,4 +38,15 @@ public class Pojazd {
             return naped;
         }
 
+    public void setMarka(String marka) {
+        this.marka = marka;
+    }
+
+    public void setRocznik(String rocznik) {
+        this.rocznik = rocznik;
+    }
+
+    public void setNaped(String naped) {
+        this.naped = naped;
+    }
 }
