@@ -11,6 +11,7 @@ package pl.cyber.trainees;  // oreślenie pakietu wramach projektu, gdzie
 import pl.cyber.trainees.wyjasnienia.Basics;
 import pl.cyber.trainees.wyjasnienia.BasicsInteger;
 import pl.cyber.trainees.wyjasnienia.InstrukcjeWarunkowe;
+import pl.cyber.trainees.zadania.Zadanie29T;
 
 import javax.websocket.RemoteEndpoint;
 import java.io.File; //importy zazwyczaj dodają się same ewemtualnie można je dodać poprzez Ctrl + Enter
@@ -55,11 +56,37 @@ public class SimpleApp {
     // ale z reguły powinna być to tablica args (tj. String[] args)
     public static void main(String[] args) {
 
+        System.out.println("POCZATEK ZADANIA 29T");
+        System.out.println();
+        Zadanie29T zadanie29T = new Zadanie29T();
+        String wiek = "31";
+        zadanie29T.MojWiek(wiek);
+
+        String imie = "Karolina";
+        zadanie29T.MojeImie(imie);
+
+        zadanie29T.CzyParzysta(2);
+        zadanie29T.CzyPodzielna(3,5);
+        zadanie29T.CzyPodzielna2(3,5);
+        zadanie29T.CzyPodzielna3(3,5);
+        zadanie29T.Potega(3);
+        System.out.println();
+        System.out.println("KONIEC ZADANIA 29T");
+        System.out.println();
+
+
+
+
+
+
+
         BasicsInteger basicsInteger8 = new BasicsInteger();
         basicsInteger8.Metoda1(basicsInteger8.DodawanieInegerow2(7,13));
 
         InstrukcjeWarunkowe instrukcjeWarunkowe = new InstrukcjeWarunkowe();
         instrukcjeWarunkowe.Cos(5);
+
+
 
 
 
@@ -90,9 +117,6 @@ public class SimpleApp {
 
         BasicsInteger basicsInteger2 = new BasicsInteger();
         basicsInteger2.Metoda1(basicsInteger2.Metoda2());
-
-
-
 
         //UWAGA należy pilnować {} metody aby nie pisac tzw. metodyw metodzie
         // w ramach metody uruchomieniowej możemy deklarować zmienne oraz pisac kod,

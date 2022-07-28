@@ -73,7 +73,7 @@ Błędne konstrukcje metod: TAK NIE PISAĆ
 
  public class NazwaKlasy {
 
-public String metodaA();  
+public String metodaA();
  -- brak rozpoczęcia i zakończenia metody przez {}
  i metody nie posiadają ;
 
