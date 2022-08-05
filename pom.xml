@@ -53,6 +53,12 @@
       <artifactId>spock-spring</artifactId>
       <version>${spock.version}</version>
     </dependency>
+      <dependency>
+          <groupId>org.jetbrains</groupId>
+          <artifactId>annotations</artifactId>
+          <version>RELEASE</version>
+          <scope>compile</scope>
+      </dependency>
   </dependencies>
 
   <build>

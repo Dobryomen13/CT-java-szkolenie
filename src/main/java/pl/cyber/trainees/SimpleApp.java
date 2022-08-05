@@ -7,6 +7,8 @@ package pl.cyber.trainees;  // oreślenie pakietu wramach projektu, gdzie
 //w naszym przykładzie src/main/java/pl.cyber.trainees
 
 //region miejsce na importy
+import spotkania.Petle;
+
 import java.io.File; //importy zazwyczaj dodają się same ewemtualnie można je dodać poprzez Ctrl + Enter
    //poprzez importy powinniśmy rozumieć użycie dodatkowych bibliotek w naszej klasie
 //endregion
@@ -20,9 +22,24 @@ import java.math.*; // z * mówimy że chcemy zaimportować wszystkie biblioteki
 
 public class SimpleApp {
     public static void main(String[] args) {
+        Petle petle = new Petle();
+        petle.Lista();
+
+        petle.choinkaRozbudowana(7);
+        petle.SzukajPodzielnych();
+
+        InstrukcjeWarunkowe instrukcjeWarunkowe = new InstrukcjeWarunkowe();
+        instrukcjeWarunkowe.uruchom();
+        instrukcjeWarunkowe.Wyswietl();
+        petle.PierwszyProgram();
+        petle.sumaLiczbZForIWhile();
+        petle.silnia();
+        petle.silniaRekurencyjna(4);
+
 
 
     }
+
 }
 
 
