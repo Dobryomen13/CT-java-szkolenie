@@ -7,6 +7,8 @@ package pl.cyber.trainees;  // oreślenie pakietu wramach projektu, gdzie
 //w naszym przykładzie src/main/java/pl.cyber.trainees
 
 //region miejsce na importy
+import pl.cyber.trainees.dziedziczenie.Tablice;
+import pl.cyber.trainees.dziedziczenie.Wyjatki;
 import spotkania.Petle;
 
 import java.io.File; //importy zazwyczaj dodają się same ewemtualnie można je dodać poprzez Ctrl + Enter
@@ -16,13 +18,14 @@ import java.io.File; //importy zazwyczaj dodają się same ewemtualnie można je
 import java.io.File;
 //importy zazwyczaj dodają się same ewemtualnie można je dodać poprzez Ctrl + Enter/poprzez importy powinniśmy rozumieć użycie dodatkowych bibliotek w naszej klasie
 
+import java.io.IOException;
 import java.math.*; // z * mówimy że chcemy zaimportować wszystkie biblioteki wramach pakietu (package) w tym przypadku java.math
 //endregion
 
 
 public class SimpleApp {
-    public static void main(String[] args) {
-        Petle petle = new Petle();
+    public static void main(String[] args)  {
+    /*    Petle petle = new Petle();
         petle.Lista();
 
         petle.choinkaRozbudowana(7);
@@ -35,6 +38,15 @@ public class SimpleApp {
         petle.sumaLiczbZForIWhile();
         petle.silnia();
         petle.silniaRekurencyjna(4);
+*/
+        /*
+        Tablice tablice = new Tablice();
+        tablice.tablica();
+        tablice.tablica2();
+        tablice.Lista();
+        */
+        Wyjatki wyjatki = new Wyjatki();
+        wyjatki.uruchom();
 
 
 
