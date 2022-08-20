@@ -9,6 +9,8 @@ package pl.cyber.trainees;  // oreślenie pakietu wramach projektu, gdzie
 //region miejsce na importy
 import pl.cyber.trainees.dziedziczenie.Tablice;
 import pl.cyber.trainees.dziedziczenie.Wyjatki;
+import pl.cyber.trainees.wyjasnienia.Obiekty;
+import pl.cyber.trainees.wyjasnienia.bankomat.BankomatService;
 import spotkania.Petle;
 
 import java.io.File; //importy zazwyczaj dodają się same ewemtualnie można je dodać poprzez Ctrl + Enter
@@ -45,13 +47,22 @@ public class SimpleApp {
         tablice.tablica2();
         tablice.Lista();
         */
-        Wyjatki wyjatki = new Wyjatki();
-        wyjatki.uruchom();
+     //   Wyjatki wyjatki = new Wyjatki();
+     //   wyjatki.uruchom();
+
+    //    Obiekty obiekty = new Obiekty();
+     //   obiekty.uruchom();
+
+        BankomatService service = new BankomatService();
+        service.uruchomRozwiazanie2();
 
 
 
     }
 
 }
+
+// Unit
+//Spook / Groovy
 
 
