@@ -2,14 +2,12 @@ package pl.cyber.trainees.wyjasnienia.bankomat;
 
 import java.util.InputMismatchException;
 import java.util.List;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class BankomatService {
 
     Scanner scanUser = new Scanner(System.in);
     Bankomat bankomat = new Bankomat();
-
 
     private boolean menu(final int pozycja) {
 
@@ -178,22 +176,16 @@ public class BankomatService {
 
                     System.out.print("Proszę podać kwotę wpłaty: ");
                     kwota = scanUser.nextInt();
-                    sprawdzWprowadzaneKwoty(kwota);
+                    dokonajWplaty(kwota, karta);
 
-                    bankomat.wplacGotowke(kwota);
-                    karta.wplacGotowke(kwota);
                     break;
 
                 case 2:
                     System.out.println("Wypłacam gotówkę");
                     System.out.print("Proszę podać kwotę wypłaty: ");
                     kwota = scanUser.nextInt();
-                    sprawdzWprowadzaneKwoty(kwota);
+                    dokonajWyplaty(kwota, karta);
 
-                    bankomat.sprawdzWyplate(kwota);
-                    karta.sprawdzWyplate(kwota);
-                    bankomat.wyplacGotowke(kwota);
-                    karta.wyplacGotowke(kwota);
 
                     break;
 
@@ -209,5 +201,22 @@ public class BankomatService {
         } catch (InputMismatchException e) {
             throw new BusinessException("Nie podano prawidłowej liczby odnoszącej się do wpłaty/wypłaty.");
         } return pozycja!=0;
+    }
+
+    private void dokonajWplaty(final Integer kwota, Karta karta){
+        sprawdzWprowadzaneKwoty(kwota);
+
+        bankomat.wplacGotowke(kwota);
+        karta.wplacGotowke(kwota);
+
+    }
+    private void dokonajWyplaty(final Integer kwota, Karta karta){
+        sprawdzWprowadzaneKwoty(kwota);
+
+        bankomat.sprawdzWyplate(kwota);
+        karta.sprawdzWyplate(kwota);
+        bankomat.wyplacGotowke(kwota);
+        karta.wyplacGotowke(kwota);
+
     }
 }

@@ -60,7 +60,7 @@ public class Wyjatki {
 
         System.out.println("a podzielone przez b daje " + a/b);
         // throw powoduje rzucenie wyjatku. Dzieki temu mozemy rzucic wyjatkiem w dowolnym miejsc kodu
-        throw new IOException("test");
+        throw new IOException("src/main/test");
 
     }
 

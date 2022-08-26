@@ -19,6 +19,10 @@ public class Karta {
         return nrKarty;
     }
 
+    public Integer getSaldo() {
+        return saldo;
+    }
+
 
     public void sprawdzNrPin(final Integer pinKarty) {
         if (!this.pinKarty.equals(pinKarty)) {
@@ -44,4 +48,6 @@ public class Karta {
     public Integer stanKonta() {
         return this.saldo;
     }
+
+
 }
