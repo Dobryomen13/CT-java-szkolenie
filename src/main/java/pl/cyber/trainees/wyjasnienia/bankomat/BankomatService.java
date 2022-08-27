@@ -7,7 +7,16 @@ import java.util.Scanner;
 public class BankomatService {
 
     Scanner scanUser = new Scanner(System.in);
-    Bankomat bankomat = new Bankomat();
+    private Bankomat bankomat;
+
+    public BankomatService(){
+        this.bankomat =  new Bankomat();
+
+    }
+
+    public BankomatService(final Bankomat bankomat) {
+        this.bankomat = bankomat;
+    }
 
     private boolean menu(final int pozycja) {
 
@@ -185,8 +194,6 @@ public class BankomatService {
                     System.out.print("Proszę podać kwotę wypłaty: ");
                     kwota = scanUser.nextInt();
                     dokonajWyplaty(kwota, karta);
-
-
                     break;
 
                 case 3:
